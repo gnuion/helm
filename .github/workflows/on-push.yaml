@@ -14,8 +14,15 @@ concurrency:
   group: 'pages'
   cancel-in-progress: false
 
+
+
 jobs:
   release:
+
+    defaults:
+      run:
+        shell: nix develop --command bash {0}
+        
     runs-on: ubuntu-latest
 
     permissions:
@@ -35,7 +42,6 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@main
         with:
           flakehub: true
-          modify-profile: true
       
       - run: hello
 
