@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  common:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-05-19T22:11:23.998165243Z"
+    description: A Helm chart for Kubernetes
+    digest: 4ba4fde0d3d9afdb6b3b7371ffdaf5b7d4fcf41dfec0b0f7fe8ac7ec18c5bd05
+    name: common
+    type: application
+    urls:
+    - https://github.com/gnuion/helm/releases/download/common-0.1.1/common-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-05-19T22:11:23.998176184Z"
