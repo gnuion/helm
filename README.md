@@ -10,13 +10,13 @@ Kubernetes applications.
 resources for an application.
 - A library chart is a collection of reusable functions and templates.
 
-|-----------------------------------------------------------------------------|
+
 | Chart      | Description                                                    |
-|-----------------------------------------------------------------------------|
+| ---------- | -------------------------------------------------------------- |
 | common     | Common functions and templates                                 |
 | nginx      | Static server                                                  |
 | postgres   | SQL Database                                                   |
-|-----------------------------------------------------------------------------|
+
 
 ## Useful commands
 
