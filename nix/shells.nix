@@ -4,6 +4,7 @@
     packages = with pkgs; [
       chart-testing
       kubernetes-helm
+      helm-docs
       hello
     ];
   };
