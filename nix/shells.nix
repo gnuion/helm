@@ -5,7 +5,8 @@
       chart-testing
       kubernetes-helm
       helm-docs
-      hello
+      yamllint
+      yamale
     ];
   };
 }

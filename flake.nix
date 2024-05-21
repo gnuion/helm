@@ -6,12 +6,7 @@
   outputs =
     { self, nixpkgs }:
     let
-      overlays = [
-        (final: prev: rec {
-          helm = prev.helm;
-          chart-testing = prev.chart-testing;
-        })
-      ];
+      overlays = [ (final: prev: rec { }) ];
       supportedSystems = [
         "x86_64-linux"
         "aarch64-linux"
