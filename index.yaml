@@ -2,6 +2,15 @@ apiVersion: v1
 entries:
   common:
   - apiVersion: v2
+    created: "2024-05-21T18:01:57.304251877Z"
+    description: Common functions and templates
+    digest: 5527672784839aa05c76e10e025a8ad1bf76be28a74d1ab2f79f8090de1356ce
+    name: common
+    type: library
+    urls:
+    - https://github.com/gnuion/helm/releases/download/common-0.1.2/common-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-05-19T22:11:23.998165243Z"
     description: A Helm chart for Kubernetes
@@ -11,4 +20,19 @@ entries:
     urls:
     - https://github.com/gnuion/helm/releases/download/common-0.1.1/common-0.1.1.tgz
     version: 0.1.1
-generated: "2024-05-19T22:11:23.998176184Z"
+  postgres:
+  - apiVersion: v2
+    appVersion: "16.3"
+    created: "2024-05-21T18:01:57.429666882Z"
+    dependencies:
+    - name: common
+      repository: file://../common
+      version: '*'
+    description: SQL database
+    digest: 7ff3b52b6ad33657d881ea427d3c59cb440ec9080c2bf54d4da42da35da33983
+    name: postgres
+    type: application
+    urls:
+    - https://github.com/gnuion/helm/releases/download/postgres-0.0.1/postgres-0.0.1.tgz
+    version: 0.0.1
+generated: "2024-05-21T18:01:57.429676721Z"
